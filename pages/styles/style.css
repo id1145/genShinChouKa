@@ -1,0 +1,124 @@
+/* 
+./styles/style.css
+这是全局样式文件
+并不具有什么参考价值
+开源东西的可以拿去做任何事
+*/
+
+/* 如何使用请参考网路 */
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+}
+
+/* 背景 */
+.video0 {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  overflow: hidden;
+  object-fit: fill;
+}
+
+/* 小图标 */
+.img0 {
+  width: 20px;
+  height: 20px;
+}
+
+body div {
+  /* 默认div样式 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 1;
+}
+
+.bigBox {
+  /* 大盒子样式也记得加上哦 */
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  flex-direction: row;
+  z-index: 2;
+}
+
+/* 应用于大盒子的对齐方式 */
+.alignment0 {
+  align-items: flex-start;
+}
+.alignment1 {
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.alignment2 {
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+.alignment3 {
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.minBox {
+  /* 小盒子样式记得加上哦 */
+  font-size: 20px;
+  z-index: 3;
+}
+
+/* 小盒子样板按需使用 */
+
+.box0 {
+  /* 人物武器等 */
+  width: 10vw;
+  height: 5vh;
+  background-color: #4d6d96;
+  margin: 25px 20px 0 20px;
+  border-radius: 5px;
+  color: white;
+}
+
+.box1 {
+  /* 原石&纠缠 */
+  color: white;
+  font-size: 15px;
+  margin: 25px 25px 0 0;
+  height: 25px;
+  border-radius: 30px;
+  background-color: #56697c;
+  padding: 0 10px 0 10px;
+}
+
+.box2 {
+  /* 主界面 */
+  width: 70vw;
+  height: 60vh;
+  background-color: black;
+}
+
+.box3 {
+  /* 商店&历史记录 */
+  font-size: 12px;
+  width: 10vw;
+  height: 35px;
+  margin: 0 0 30px 30px;
+  border-radius: 30px;
+  background-color: rgb(255, 255, 255);
+}
+.box4 {
+  /* 祈愿 */
+  color: #b2590071;
+  font-size: 15px;
+  width: 15vw;
+  height: 50px;
+  margin: 0 30px 30px 0;
+  background-color: white;
+  border-radius: 30px;
+  border: 2px solid rgb(255, 191, 0);
+}

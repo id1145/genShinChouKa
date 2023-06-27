@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ch-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>祈愿</title>
+    <script src="./script/script.js"></script>
+  </head>
+  <body>
+    <!-- 等待加载完成再显示 -->
+    <div
+      id="ground"
+      class="bigBox"
+      style="background-color: aliceblue; z-index: 999"
+    >
+      <div id="loadingTime"></div>
+      <button onclick="button1()">点击进入</button>
+    </div>
+    <!-- 背景音乐 -->
+
+    <audio id="audio0" src="../audios/background.mp3"></audio>
+
+    <!-- 背景视频 -->
+    <video
+      loop
+      autoplay
+      muted
+      class="video0"
+      src="../videos/background.mp4"
+    ></video>
+
+    <!-- 上部分 -->
+    <div class="bigBox alignment0">
+      <div class="minBox box0">000</div>
+      <div class="minBox box0">000</div>
+      <div class="minBox box0">000</div>
+    </div>
+
+    <div class="bigBox alignment1">
+      <div class="minBox box1">
+        <div style="flex-direction: row">
+          <img class="img0" src="../images/yuanshi.png" alt="" />
+          <div style="margin-left: 10px">0</div>
+        </div>
+      </div>
+
+      <div class="minBox box1">
+        <div style="flex-direction: row">
+          <img class="img0" src="../images/jiuchan.png" alt="" />
+          <div style="margin-left: 10px">0</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 中部分 -->
+    <div class="bigBox">
+      <div class="minBox box2"></div>
+    </div>
+
+    <!-- 下部分 -->
+    <div class="bigBox alignment2">
+      <div class="minBox box3">商店</div>
+      <div class="minBox box3">概率表</div>
+      <div class="minBox box3">历史记录</div>
+    </div>
+
+    <div class="bigBox alignment3">
+      <div class="minBox box4">
+        祈愿1次<br />
+        <div style="flex-direction: row">
+          <img class="img0" src="../images/jiuchan.png" alt="" />
+          <div style="margin-left: 5px">x1</div>
+        </div>
+      </div>
+
+      <div class="minBox box4">
+        祈愿10次<br />
+        <div style="flex-direction: row">
+          <img class="img0" src="../images/jiuchan.png" alt="" />
+          <div style="margin-left: 5px">x1</div>
+        </div>
+      </div>
+    </div>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </body>
+</html>
