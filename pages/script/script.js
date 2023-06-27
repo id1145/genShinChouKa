@@ -17,8 +17,12 @@ window.onload = function () {
 //加载van成后隐藏计时器同时进行下一步...
 window.document.addEventListener("DOMContentLoaded", function () {
   let loadingTime = document.getElementById("loadingTime");
+  let buttons0 = document.getElementById("buttons0");
+
   loadingTime.style.display = "none";
-  //....
+  if (buttons0.style.display === "none") {
+    buttons0.style.display = "block";
+  }
 
   //....
 });
